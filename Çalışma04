@@ -1,0 +1,27 @@
+liste = []
+while True:
+    try:
+        adet = int(input("Kaç sayı gireceksin (en fazla): "))
+        if adet <= 0:
+            print("Lütfen pozitif bir sayı gir.")
+            continue
+        break
+    except ValueError:
+        print("Lütfen sadece tam sayı gir.")
+for i in range(adet):
+    while True:
+        try:
+            sayı = int(input(f"{i+1}. sayıyı gir: "))
+            break
+        except ValueError:
+            print("Lütfen geçerli bir tam sayı gir. ")
+    liste.append(sayı)
+    while True:
+        devam = input("Devam etmek istiyor musunuz ( e evet, h hayır olacak şekilde): ").lower()
+        if devam in ["e", "h"]:
+            break
+        else:
+            print("Lütfen sadece 'e' veya 'h' harfini girin.")
+    if devam == "h":
+        break
+print("Girdiğin sayılar: ", liste )
