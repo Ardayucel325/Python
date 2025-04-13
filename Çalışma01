@@ -1,0 +1,14 @@
+try:
+    adet = int(input("Kaç elemanlı bir liste oluşturmak istiyorsun? "))
+    if adet <= 0:
+        print("Liste adeti sıfırdan büyük olmalı!")
+    else:
+        liste = []
+        for i in range(adet):
+            sayi = int(input(f"{i+1}. sayıyı gir: "))
+            liste.append(sayi)
+        print("Oluşturulan liste: ",liste)
+except ValueError:
+    print("Sadece tam sayı girmelisin!")
+finally:
+    print("İşlem tamamlandı.")
