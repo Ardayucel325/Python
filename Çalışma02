@@ -1,0 +1,9 @@
+liste = []
+adet = int(input("Kaç sayı gireceksin (en fazla) ? "))
+for i in range(adet):
+    sayı = int(input(f"{i+1}. sayıyı gir: "))
+    liste.append(sayı)
+    devam = input("Devam etmek istiyor musun? (e evet, h hayır olacak şekilde): ")
+    if devam.lower() == "h":
+        break
+print("Girdiğin sayılar: ",liste)
