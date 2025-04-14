@@ -1,0 +1,29 @@
+yazılar = []
+sayılar = []
+while True:
+    tür = input("Hangi tür veri gireceksin ?(sayı için 1, yazı için 2, ikisi birden için 3, listeyi bitirmek için 4 girin): ").lower()
+    if tür == "1":
+        try:
+            sayı = int(input("Bir sayı gir: "))
+            sayılar.append(sayı)
+        except ValueError:
+            print("Lütfen geçerli bir sayı giriniz.")
+    elif tür == "2":
+        yazı = input("Bir yazı giriniz: ")
+        yazılar.append(yazı)
+    elif tür == "3":
+        metin = input("Bir şey giriniz: ")
+        sayılar.append(metin)
+        yazılar.append(metin)
+    elif tür == "4":
+        try:
+            çıktı = int(input("Sayılar için 1, yazılar için 2 girin: "))
+            if çıktı == 1:
+                print(f"Girdiğin sayılar:",sayılar)
+            elif çıktı == 2:
+                print(f"Girdiklerin:", yazılar)
+            else:
+                print("Geçerli sayı girin!")
+        except ValueError:
+            print("Geçerli sayı girin!")
+            break
