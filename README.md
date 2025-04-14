@@ -26,3 +26,10 @@
 <br>
 <br>
 [Program04 için tıklayınız](https://github.com/Ardayucel325/Python/commit/fe83301094faa8b6cb6aeedfd0f1acfe3e81f511)
+<br>
+<br>
+
+**Çalışma05** 
+<br>
+<br>
+[Program05 için tıklayınız](https://github.com/Ardayucel325/Python/commit/aa74a81af1396e6183c12e6721028b7502a8216c)
