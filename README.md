@@ -33,3 +33,8 @@
 <br>
 <br>
 [Program05 için tıklayınız](https://github.com/Ardayucel325/Python/commit/aa74a81af1396e6183c12e6721028b7502a8216c)
+
+**Çalışma01(2)** 
+<br>
+<br>
+[Program05 için tıklayınız](https://github.com/Ardayucel325/Python/commit/6f4c28b4a1b6d2de75b4347beebb08a68a34cd5b)
