@@ -1,0 +1,44 @@
+class Oyuncu:
+    def __init__(self,isim):
+        self.isim = isim
+        self.çanta = []
+        
+    def esya__ekle(self,esya):
+        self.çanta.append(esya)
+        print(esya,"çantaya eklendi.")
+            
+    def esya__goster(self):
+        print(self.isim,"çantasında şunlar var: ")
+        for esya in self.çanta:
+            print("-",esya)
+            
+    def esya__çıkar(self,esya):
+        if esya in self.çanta:
+            self.çanta.remove(esya)
+            print(esya,"çantadan çıkarıldı.")
+        else:
+            print("Eşya çantada yok.")
+isim = input("Oyuncu adını gir: ")
+oyuncu1 = Oyuncu(isim)
+
+while True:
+    print("\nKomutlar: ekle, göster, çıkar, çık")
+    komut = input("Bir komut gir: ").strip().lower()
+    
+    if komut == "ekle":
+        esya = input("Eklemek istediğin eşya: ").strip().lower()
+        oyuncu1.esya__ekle(esya)
+    
+    elif komut == "göster":
+        oyuncu1.esya__goster()
+        
+    elif komut == "çıkar":
+        esya = input("Çıkarmak istediğin eşya: ").strip().lower()
+        oyuncu1.esya__çıkar(esya)
+        
+    elif komut == "çık":
+        print("Oyun kapatıldı.")
+        break
+    
+    else:
+        print("Geçersiz komut.")
