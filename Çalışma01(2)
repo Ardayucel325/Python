@@ -1,0 +1,36 @@
+class Oyuncu:
+    def __init__(self, isim, can):
+        self.isim = isim
+        self.can = can
+    
+    def selamla(self):
+        print("Merhaba, benim adım:",self.isim)
+        
+    def durum(self):
+        print(self.isim,"şu an",self.can,"canla ayakta.")
+    
+    def hasaral(self, miktar):
+        self.can -= miktar
+        print(self.isim,"hasar aldı! Kalan can:",self.can)
+        
+    def iyileş(self, miktar):
+        self.can += miktar
+        print(self.isim,"iyileşdi! Şuanki can:",self.can)
+        
+    def saldır(self, hedef):
+        if isinstance(hedef, Oyuncu):
+            hasar = 20
+            print(self.isim,"saldırı yaptı! Hasar:", hasar)
+            hedef.hasaral(hasar)
+        else:
+            print("Hedef geçersiz!")
+kişi1 = Oyuncu("Ahmet", 100)
+kişi2 = Oyuncu("Mehmet", 100)
+kişi1.selamla()
+kişi1.durum()
+kişi1.saldır(kişi2)
+kişi2.durum()
+kişi2.iyileş(10)
+kişi2.durum()
+kişi2.saldır(kişi1)
+kişi1.durum()
