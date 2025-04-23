@@ -1,0 +1,67 @@
+puan = 0
+Cevap = []
+print("Teste başlayalım!")
+soru1 = input("Aşağıdakilerden hangisi canlıların yağ depolama amaçlarından biri değildir?\n"
+"A) Metabolik suyu fazla olması.\n"
+"B) İzolasyonu sağlaması.\n"
+"C) Fazla enerji verdiği için.\n"
+"D) Hafif olduğu için.\n"
+"E) Solunumda ilk kullanıldığı için.\n"" Cevabınız: ").strip().lower()
+Cevap.append(soru1.upper())
+if soru1 == "e":
+    print("Tebrikler! ")
+    puan += 20
+else:
+    print("Hay aksi! Doğru cevap: E")
+soru2 = input("Aşağıdakilerden hangisi yağlar hakkında yanlıştır? \n""A) Yağlar organiktir.\n""B) Canlılar tarafından sentezlenir. \n""C) Düzenleyicidirler.\n""D) Enerji verirler. \n""E) Solunumda kullanıldınlarında yan ürün vermezler.\n""Cevabınız: ").strip().lower()
+Cevap.append(soru2.upper())
+if soru2 == "e":
+    print("Tebrikler! ")
+    puan += 20
+else:
+    print("Hay aksi! Doğru cevap: E")
+    print("Puanınız:",puan) 
+soru3 = input("3) Yağların yapısında aşağıdaki elementlerden hangisi bulunmaz?\n"
+              "A) Karbon\n"
+              "B) Hidrojen\n"
+              "C) Oksijen\n"
+              "D) Azot\n"
+              "E) Hepsi bulunur\n"
+              "Cevabınız: ").strip().lower()
+Cevap.append(soru3.upper())
+if soru3 == "d":
+    print("Tebrikler!")
+    puan += 20
+else:
+    print("Hay aksi! Doğru cevap: D")
+soru4 = input("Aşağıdakilerden hangisi doymuş yağların özelliğidir? \n""A) Oda sıcaklığında sıvıdır. \n""B) Bitkisel kaynaklıdır. \n""C) Tüm karbonlar tek bağ yapar. \n""D) Kalp sağlığına faydalıdır. \n""E) Daha az enerji verir.\n""Cevabınız: )").strip().lower ()
+Cevap.append(soru4.upper())
+if soru4 == "c":
+     print("Tebrikler! ")
+     puan += 20 
+else:
+    print("Hay aksi! Doğru cevap: c")
+soru5 = input("Yağların yıkımı sonucu oluşan ürün aşağıdakilerden hangisidir? \n""A) Glikoz\n""B) Amino asit\n""C) Yağ asidi\n""D) Nükleotid\n""E) Laktik asit\n""Cevabınız: ").strip().lower () 
+Cevap.append(soru5.upper())
+if soru5 == "c":
+    print("Tebrikler! ")
+    puan += 20
+else:
+    print("Hay aksi! Doğru cevap: C")
+print("Puanınız:",puan)
+if puan == 100:
+    print("Tebrikler, bu konuda gayet iyisin! ")
+elif puan>= 60:
+    print("Tebrikler! ")
+else:
+    print("Biraz çalışman gerekiyor! ")
+cevaplar = [soru1,soru2,soru3,soru4,soru5]
+doğrucevaplar = ["e","e","d","c","c"]
+doğru = 0
+for i in range(5):
+     if cevaplar[i] == doğrucevaplar[i]:
+         doğru += 1
+yanlış = 5 - doğru
+print("Doğru sayısı:",doğru,"\nYanlış sayısı:",yanlış)
+for i in range(5):
+    print("Cevapların:",Cevap[i])
