@@ -43,3 +43,8 @@
 <br>
 <br>
 [Program02(2) için tıklayınız](https://github.com/Ardayucel325/Python/blob/main/%C3%87al%C4%B1%C5%9Fma02(2))
+
+**Soru01** 
+<br>
+<br>
+[Program01 için tıklayınız](https://github.com/Ardayucel325/Python/blob/main/Soru01)
